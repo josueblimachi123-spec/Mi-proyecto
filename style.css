@@ -1,0 +1,74 @@
+body {
+    font-family: Arial;
+    color: white;
+
+    background: linear-gradient(120deg, #071321, #164b70, #703c91, #145b66);
+    background-size: 400% 400%;
+    animation: movimiento 10s infinite;
+}
+
+@keyframes movimiento {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.inicio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bienvenida {
+    width: 70%;
+    background-color: #071321;
+    padding: 30px;
+    border: 2px solid #66c0f4;
+}
+
+.bienvenida h1 {
+    color: #66c0f4;
+    margin: 20px;
+}
+
+.bienvenida p {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.oculto {
+    display: none;
+}
+
+.calculadora {
+    width: 350px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #101b2b;
+    border: 2px solid #66c0f4;
+    text-align: center;
+}
+
+.pantalla {
+    background-color: #071321;
+    padding: 15px;
+    margin: 15px;
+    text-align: right;
+}
+
+.pantalla p {
+    color: #66c0f4;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.botones button {
+    height: 50px;
+    font-size: 18px;
+}

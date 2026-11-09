@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proyecto</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="inicio" class="inicio">
+
+        <div class="bienvenida">
+
+            <h1>UN MISTERIO POR DESCUBRIR</h1>
+
+            <h3>He creado:</h3>
+
+            <p>
+                Un artefacto tecnologico capaz de interpretar elementos
+                desconocidos, establecer conexiones entre diferentes
+                valores y convertir informacion aparentemente dispersa
+                en resultados precisos mediante un proceso interno
+                de razonamiento.
+            </p>
+
+            <button class="btn btn-info" onclick="entrar()">
+                ?Quieres ver?
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section id="calculadora" class="calculadora oculto">
+
+        <h2>UNIDAD DE PROCESAMIENTO</h2>
+
+        <div class="pantalla">
+            <p id="historial">Listo</p>
+            <h2 id="resultado">0</h2>
+        </div>
+
+        <div class="botones">
+
+            <button class="btn btn-secondary" onclick="limpiar()">C</button>
+            <button class="btn btn-secondary" onclick="borrar()">DEL</button>
+            <button class="btn btn-info" onclick="operar('/')">/</button>
+            <button class="btn btn-info" onclick="operar('*')">x</button>
+
+            <button class="btn btn-dark" onclick="agregar('7')">7</button>
+            <button class="btn btn-dark" onclick="agregar('8')">8</button>
+            <button class="btn btn-dark" onclick="agregar('9')">9</button>
+            <button class="btn btn-info" onclick="operar('-')">-</button>
+
+            <button class="btn btn-dark" onclick="agregar('4')">4</button>
+            <button class="btn btn-dark" onclick="agregar('5')">5</button>
+            <button class="btn btn-dark" onclick="agregar('6')">6</button>
+            <button class="btn btn-info" onclick="operar('+')">+</button>
+
+            <button class="btn btn-dark" onclick="agregar('1')">1</button>
+            <button class="btn btn-dark" onclick="agregar('2')">2</button>
+            <button class="btn btn-dark" onclick="agregar('3')">3</button>
+            <button class="btn btn-success" onclick="calcular()">=</button>
+
+            <button class="btn btn-dark" onclick="agregar('0')">0</button>
+            <button class="btn btn-dark" onclick="agregar('.')">.</button>
+
+        </div>
+
+        <button class="btn btn-outline-light mt-3" onclick="volver()">
+            VOLVER
+        </button>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
